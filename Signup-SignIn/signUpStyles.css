@@ -1,0 +1,69 @@
+/* Import whatever font you want for the webpage here. It can be multiple*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+
+}
+body{
+
+    background-color: #e4fde1;
+
+}
+.wrapper{
+
+    width: 330px;
+    padding: 2rem 1rem;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+
+}
+h1{
+
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1.2rem;
+
+}
+form input{
+
+    width: 92%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color: #e4e4e4;
+    background-color: #ecebeb9f;
+
+}
+button{
+
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    background-color: rgb(130, 197, 128);
+    cursor: pointer;
+
+}
+button:hover{
+
+    background-color: #61b15e;
+
+}
+input:focus{
+
+    border: 2.5px solid rgb(192, 192, 192)
+
+}

@@ -1,0 +1,218 @@
+.stockgen-body {
+    height: 100vh;
+    background-color: white;
+}
+
+.class-name {
+    display: flex;
+    padding-left: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.209);
+    
+    & h3 {
+        flex: 1;
+        color: rgb(56, 196, 215);
+    }
+}
+
+.stockgen-container {
+    display: flex;
+    
+    & > div {
+        position: relative;
+        box-sizing: border-box;
+        flex: 1 1;
+        height: calc(100vh - 28.5px - 46px);
+        overflow-y: auto;
+
+        & > div:not(:last-of-type) {
+            border-bottom: 1px solid #eee;
+        }
+    }
+
+    & > div:not(:last-of-type) {
+        border-right: 1px solid #ddd;
+    }
+}
+
+.user-port-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    & input[type="numeric"] {
+        border: none;
+        outline: none;
+        padding: 10px 5px;
+        background-color: var(--transparent);
+        border-bottom: var(--gray) 1px solid
+    }
+
+    & button {
+        margin-top: 20px;
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: var(--dark);
+        box-shadow: none;
+        color: white;
+        transition: background-color 0.2s
+    }
+    
+    & button:hover {
+        background-color: rgb(179, 179, 179);
+    }
+}
+
+.port-cash-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+    & > div {
+        flex: 1;
+    }
+}
+
+.portfolio-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+
+    & input::-webkit-outer-spin-button,
+    & input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    & input[type=number] {
+        -moz-appearance:textfield; /* Firefox */
+    }
+
+    & input {
+        height: 30px;
+        margin-left: auto;
+        text-align: right;
+        border: none;
+        outline: none;
+        padding: 0 10px;
+        background-color: var(--transparent);
+        border-bottom: var(--gray) 1px solid;
+        width: 7ch;
+    }
+}
+
+.portfolio-side {
+    border-right: 1px solid #ddd;
+}
+
+.cash-side {
+    text-align: right;
+    padding-right: 20px;
+
+    & input::-webkit-outer-spin-button,
+    & input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    & input[type=number] {
+        -moz-appearance: textfield; /* Firefox */
+    }
+
+    & input {
+        margin-left: auto;
+        text-align: right;
+        border: none;
+        outline: none;
+        padding: 5px 10px;
+        background-color: var(--transparent);
+        border-bottom: var(--gray) 1px solid;
+        width: 15ch;
+    }
+}
+
+.sug-modal {
+    position: absolute;
+    top: 61px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.356);
+    backdrop-filter: blur(5px);
+
+    & > div {
+        position: absolute;
+        background-color: white;
+        width: 80%;
+        height: 80%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+
+        & > div {
+            flex: 1
+        }
+    }
+}
+
+.sug-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & button {
+        border: none;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: rgb(179, 179, 179);
+        box-shadow: none;
+        color: white;
+        transition: background-color 0.2s
+    }
+    
+    & button:hover {
+        background-color: var(--blue-theme);
+    }
+}
+
+.sug-side-container {
+    box-sizing: border-box;
+    position: relative;
+    max-height: calc(100% - 80px);
+    height: auto;
+    overflow-y: auto;
+}
+
+.sug-item-header {
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.121);
+    background-color: rgba(255, 255, 255, 0.739);
+    backdrop-filter: blur(10px);
+}
+
+.sug-item {
+    display: flex;
+    border-bottom: 1px #eee solid;
+    padding: 0 20px;
+
+    & * {
+        flex: 1;
+    }
+
+    & > p:nth-of-type(2) {
+        text-align: justify;
+    }
+
+    & > p:last-of-type, h4:last-of-type {
+        text-align: right;
+    }
+}

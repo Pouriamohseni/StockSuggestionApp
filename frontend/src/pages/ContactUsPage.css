@@ -1,0 +1,7 @@
+.contact-us-page {
+    height: 140vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(150deg, rgb(90, 222, 255), rgb(32, 91, 168), rgb(30, 0, 57))
+}

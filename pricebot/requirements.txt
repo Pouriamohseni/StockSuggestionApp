@@ -1,0 +1,6 @@
+psycopg2-binary
+python-dotenv
+yfinance
+requests-cache
+requests-ratelimiter
+pyrate-limiter

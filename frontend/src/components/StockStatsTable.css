@@ -1,0 +1,14 @@
+.stock-row {
+    text-align: center;
+}
+
+.title-row *{
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.top-performer-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 0;
+}

@@ -1,0 +1,32 @@
+version: '3.6'
+
+services:
+    frontend:
+        image: jeremu2907/cs4347:frontend
+        ports:
+          - "3000:80"
+        networks:
+          - proxy
+
+    backend:
+        image: jeremu2907/cs4347:backend
+        ports:
+          - "8000:80"
+        networks:
+          - proxy
+        env_file:
+          - backend.env
+        command: >
+          sh -c "python manage.py runserver 0.0.0.0:8000 --noreload"
+
+    bot:
+        image: jeremu2907/cs4347:pricebot
+        networks:
+          - proxy
+        env_file:
+          - backend.env
+        command: >
+          sh -c "python stockPriceBot.py"
+networks:
+    proxy:
+        external: true

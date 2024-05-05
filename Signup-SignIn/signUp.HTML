@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signUpStyles.css">
+
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1>Sign Up</h1>
+        <form action="#">
+
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Re-Type Password">
+
+        </form>
+
+        <div>
+
+            <input type="checkbox" id="termsAndConditionsCheckBox">
+            <!-- href a pdf in the same folder and added a target of _blank in order to get the pdf to open up on a seperate page -->
+            <label for="termsAndConditionsCheckBox"> I agree to these <a href="Terms and Conditions - Portfolio Peak.pdf" target="_blank">Terms & Conditions</a></label> 
+
+        </div>
+
+        <button>Sign Up</button>
+        <!-- Adding a break to add a space between the sign up button and the "already have an account" -->
+        <br></br>
+        <div class="alreadyAMember">Already have an account? <a href="#">Login</a></div>
+
+    </div>
+    
+</body>
+</html>

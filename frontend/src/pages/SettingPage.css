@@ -1,0 +1,26 @@
+.setting-page-container {
+    background-color: white;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+    padding: 40px;
+
+    & > h3 {
+        margin: 0;
+        color: rgb(56, 196, 215)
+    }
+
+    .common-input {
+        margin-top: 40px;
+    }
+}
+
+.update-name-field {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+    & input {
+        width: 50%;
+    }
+}

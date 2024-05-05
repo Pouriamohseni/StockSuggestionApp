@@ -1,0 +1,70 @@
+.landing-page {
+    /* Define your custom properties here so they only affect landing-page and its children */
+    --primary-color: #7074d8; /* Or any other color code you want to use */
+    --text-light: #FFFFFF;
+    --background-gradient: linear-gradient(150deg, rgb(90, 222, 255), rgb(32, 91, 168), rgb(30, 0, 57));
+    --text-gradient: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,1));
+
+    font-family: 'Arial', sans-serif;
+    background-image: var(--background-gradient);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+}
+
+.hero {
+    width: 100%; /* Full width to center content within */
+    max-width: 600px; /* Adjust this value as needed */
+    text-align: center; /* Center text and button */
+    padding: 2rem;
+}
+
+.hero-content h1,
+.hero-content p {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: var(--text-light);
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; /* Make the button a block element */
+    margin: 2rem auto 0; /* Add margin to the top and auto on the sides */
+    width: 200px; /* Fixed width for the button */
+}
+
+.cta:hover {
+    background-color: #3d3d3d; /* Slightly lighter gray on hover */
+}
+
+.hero-image {
+    margin: 2rem 0; /* Add space above and below the image */
+}
+
+.hero-image img {
+    max-width: 100%; /* Full width of the hero-image container */
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+

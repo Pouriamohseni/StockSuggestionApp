@@ -1,0 +1,65 @@
+.stock-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stock-item-container {
+    display: flex;
+    padding: 20px;
+
+    & > div:first-of-type {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+
+        & p {
+            color: #aaa;
+        }
+    }
+
+    & > div:last-of-type {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    & p {
+        word-break: break-word;
+        margin: 0;
+    }
+}
+
+.stock-item-btn {
+    align-self: flex-end;
+    background-color: #00000000;
+    border: none;
+    color: #777
+}
+
+.other-stocks {
+    & div:first-of-type {
+        flex: 2
+    }
+    & >  div:last-of-type {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.stock-growth-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.red-indic {
+    color: red;
+}
+
+.green-indic {
+    color: green;
+}
