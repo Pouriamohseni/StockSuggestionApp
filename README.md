@@ -72,6 +72,8 @@ cd frontend
 npm start
 ```
 
+Project Images:
+
 <img width="969" alt="Screenshot 2024-06-06 at 10 27 00 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/aa52202d-3fba-4a94-aa40-fbaa1ed2ad3a">
 
 <img width="969" alt="Screenshot 2024-06-06 at 10 27 47 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/10151cef-4f50-456b-81f9-5b5ca8ca0879">
