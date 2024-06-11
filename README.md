@@ -71,3 +71,13 @@ npm install
 cd frontend
 npm start
 ```
+
+<img width="969" alt="Screenshot 2024-06-06 at 10 27 00 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/aa52202d-3fba-4a94-aa40-fbaa1ed2ad3a">
+
+<img width="969" alt="Screenshot 2024-06-06 at 10 27 47 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/10151cef-4f50-456b-81f9-5b5ca8ca0879">
+
+<img width="1059" alt="Screenshot 2024-06-11 at 10 49 29 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/18de9b8b-7d47-4ac6-afb6-7466c528d9ac">
+
+<img width="1059" alt="Screenshot 2024-06-11 at 10 50 09 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/eccd98b7-69e5-4d74-8497-aaa786afa491">
+
+<img width="992" alt="Screenshot 2024-06-11 at 10 51 53 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/c8a12d36-db66-44ae-b226-6bea6b7af328">
