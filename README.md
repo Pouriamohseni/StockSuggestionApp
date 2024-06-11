@@ -82,4 +82,4 @@ Project Images:
 
 <img width="1059" alt="Screenshot 2024-06-11 at 10 50 09 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/eccd98b7-69e5-4d74-8497-aaa786afa491">
 
-<img width="992" alt="Screenshot 2024-06-11 at 10 51 53 AM" src="https://github.com/Pouriamohseni/StockSuggestionApp/assets/145625808/c8a12d36-db66-44ae-b226-6bea6b7af328">
+
